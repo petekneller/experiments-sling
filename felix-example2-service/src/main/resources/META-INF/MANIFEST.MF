@@ -1,0 +1,5 @@
+Bundle-Name: Example 2 Service
+Bundle-Vendor: Apache Felix
+Bundle-Version: 1.0.0
+Export-Package: example2.service
+Import-Package: org.osgi.framework

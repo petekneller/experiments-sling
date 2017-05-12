@@ -13,8 +13,9 @@
 # Examples
 
 * /felix-example1: a simple example of a service that listens for events inside the container and emits to stdout;  http://felix.apache.org/documentation/tutorials-examples-and-presentations/apache-felix-osgi-tutorial/apache-felix-tutorial-example-1.html
+* /felix-example2-service & -consumer: http://www.javaworld.com/article/2077837/application-development/java-se-hello-osgi-part-1-bundles-for-beginners.html?page=3
 * /felix-jetty: a 'hello world' servlet hosted in jetty within felix; https://examples.javacodegeeks.com/enterprise-java/jetty/jetty-osgi-example/
-** requires the VM args: `-Djetty.home.bundle=org.eclipse.jetty.osgi.boot -Djetty.http.port=8080`
+** requires the extra VM args: `-Djetty.home.bundle=org.eclipse.jetty.osgi.boot -Djetty.http.port=8080`
 ** servlet then available at http://localhost:8080/servletcontext
 * /felix-webadmin: based on http://felix.apache.org/documentation/subprojects/apache-felix-web-console.html and http://felix.apache.org/documentation/subprojects/apache-felix-http-service.html
 ** admin console available at: http://localhost:8080/system/console, default user/pass = admin/admin

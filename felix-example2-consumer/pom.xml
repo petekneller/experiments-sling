@@ -10,10 +10,10 @@
         <relativePath>..</relativePath>
     </parent>
 
-    <artifactId>felix-webadmin</artifactId>
+    <artifactId>felix-example2-consumer</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -52,53 +52,12 @@
             <version>1.0.2</version>
         </dependency>
         <!-- End Necessary to run Felix -->
+        <dependency>
+            <groupId>test</groupId>
+            <artifactId>felix-example2-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.webconsole -->
-        <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.webconsole</artifactId>
-            <version>4.3.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.http.servlet-api</artifactId>
-            <version>1.1.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.http.api</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.http.jetty</artifactId>
-            <version>3.2.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.http.base</artifactId>
-            <version>3.0.8</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.configadmin</artifactId>
-            <version>1.8.14</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.eventadmin</artifactId>
-            <version>1.4.8</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-fileupload</groupId>
-            <artifactId>commons-fileupload</artifactId>
-            <version>1.3.2</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.5</version>
-        </dependency>
 
     </dependencies>
 
@@ -109,7 +68,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
                     <archive>
-                        <!--<manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>-->
+                        <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
                     </archive>
                 </configuration>
             </plugin>
@@ -132,15 +91,7 @@
                         org.apache.felix.gogo.command,
                         org.apache.felix.gogo.jline,
                         org.apache.felix.gogo.runtime,
-                        org.apache.felix.webconsole,
-                        org.apache.felix.http.servlet-api,
-                        org.apache.felix.http.api,
-                        org.apache.felix.http.jetty,
-                        org.apache.felix.http.base,
-                        org.apache.felix.configadmin,
-                        org.apache.felix.eventadmin,
-                        commons-fileupload,
-                        commons-io
+                        felix-example2-service
                     </includeArtifactIds>
                 </configuration>
             </plugin>
