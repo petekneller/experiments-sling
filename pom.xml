@@ -14,6 +14,8 @@
         <module>felix-example1</module>
         <module>felix-example2-service</module>
         <module>felix-example2-consumer</module>
+        <module>felix-example3-service</module>
+        <module>felix-example3-consumer</module>
         <module>felix-jetty</module>
         <module>felix-webadmin</module>
     </modules>
