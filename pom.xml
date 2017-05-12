@@ -18,6 +18,7 @@
         <module>felix-example3-consumer</module>
         <module>felix-jetty</module>
         <module>felix-http-service</module>
+        <module>felix-whiteboard-service</module>
         <module>felix-webadmin</module>
     </modules>
 

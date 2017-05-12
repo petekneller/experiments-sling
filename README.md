@@ -19,5 +19,9 @@
 * /felix-jetty: a 'hello world' servlet hosted in jetty within felix; https://examples.javacodegeeks.com/enterprise-java/jetty/jetty-osgi-example/
 ** requires the extra VM args: `-Djetty.home.bundle=org.eclipse.jetty.osgi.boot -Djetty.http.port=8080`
 ** servlet then available at http://localhost:8080/servletcontext
+* /felix-http-service: http://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-httpservice
+** servlet then available at: http://localhost:8080/hello
+* /felix-http-whiteboard: http://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-osgi-http-whiteboard
+** servlet then available at: http://localhost:8080/hello
 * /felix-webadmin: based on http://felix.apache.org/documentation/subprojects/apache-felix-web-console.html and http://felix.apache.org/documentation/subprojects/apache-felix-http-service.html
 ** admin console available at: http://localhost:8080/system/console, default user/pass = admin/admin

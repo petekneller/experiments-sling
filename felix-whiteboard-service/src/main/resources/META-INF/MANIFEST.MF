@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: felix-whiteboard-service
+Bundle-SymbolicName: felix-whiteboard-service
+Bundle-Version: 1.0.0
+Bundle-Activator: felixwhiteboardservice.Activator
+Import-Package: org.osgi.framework,
+ javax.servlet,
+ javax.servlet.http
