@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: felix-http-service
+Bundle-SymbolicName: felix-http-service
+Bundle-Version: 1.0.0
+Bundle-Activator: felixhttpservice.Activator
+Import-Package: org.osgi.framework,
+ org.osgi.util.tracker,
+ javax.servlet,
+ javax.servlet.http,
+ org.osgi.service.http
