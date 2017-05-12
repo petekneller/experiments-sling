@@ -1,11 +1,7 @@
-/*
- * Apache Felix OSGi tutorial.
- * http://felix.apache.org/documentation/tutorials-examples-and-presentations/apache-felix-osgi-tutorial/apache-felix-tutorial-example-1.html
-**/
-
-package example1;
+package example2;
 
 import example2.service.HelloService;
+import example2.service.HelloServiceFactory;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceListener;
@@ -15,7 +11,7 @@ public class Activator implements BundleActivator, ServiceListener
 {
     public void start(BundleContext context)
     {
-        HelloService hello = example2.service.HelloServiceFactory.create();
+        HelloService hello = HelloServiceFactory.create();
         hello.sayHello();
     }
 
